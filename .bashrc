@@ -115,5 +115,11 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+#fix color bugs on wsl 
 LS_COLORS='ow=01;36;40'  
 export LS_COLORS
+# for git bash
+if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then 
+    GIT_PROMPT_ONLY_IN_REPO=1     
+    source $HOME/.bash-git-prompt/gitprompt.sh 
+fi
