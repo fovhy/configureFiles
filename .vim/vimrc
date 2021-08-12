@@ -226,6 +226,7 @@ set background=dark
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'vimwiki/vimwiki'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 set nocompatible
 filetype plugin on
@@ -233,3 +234,4 @@ syntax on
 let g:vimwiki_list = [{'syntax': 'markdown', 'ext': 'md', 'path_html': '~/vimwiki/html'}]
 let g:vimwiki_markdown_link_ext = 1
 let g:markdown_folding = 1
+let g:lightline = {'colorscheme': 'one'}
