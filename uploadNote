@@ -1,0 +1,4 @@
+git ~/vimwiki
+git add .
+git commit -m "update"
+git push
